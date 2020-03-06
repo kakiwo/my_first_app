@@ -1,0 +1,4 @@
+%h1 新規メモ作成
+= form_tag('/posts', method: :post) do
+  %input{type: "text", name: "content"}/
+  %input{type: "submit", value: "投稿する"}/

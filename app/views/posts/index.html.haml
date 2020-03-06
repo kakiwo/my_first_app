@@ -1,0 +1,10 @@
+%h1 メモアプリ
+
+= link_to '新規作成', posts_new_path
+
+- @posts.each do |post|
+  .post
+    .post-data
+      投稿日時 : #{post.content}
+    .post-content
+      = post.created_at
